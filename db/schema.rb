@@ -19,9 +19,9 @@ ActiveRecord::Schema.define(version: 20140814142548) do
   end
 
   create_table "users", force: true do |t|
+    t.integer  "family_id"
     t.string   "name"
     t.string   "presence"
-    t.integer  "family_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
