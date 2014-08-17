@@ -49,3 +49,42 @@ h1 span {
   font-size: 150% !important;
   margin:5px;
 }
+
+/* user show page */
+
+.name {
+	text-align: center;
+	font-size: 250%;
+}
+
+.link {
+	margin: 0 auto;
+	font-size:150%;
+	text-align:center;
+	padding:5px;
+}
+
+.done-button {
+	font-size:250% !important;
+	margin: 0 auto;
+}
+
+/* family view */
+
+#table {
+	border-style:solid;
+	border-width:1px;
+	width:400px;
+	font-size:175%;
+	margin: 0 auto;
+	border-radius:5px;
+	padding:3px;
+}
+
+#title {
+	text-align:center;
+	font-style:bold;
+	font-size:130%;
+	padding:8px;
+	margin:3px;
+}

@@ -1,0 +1,13 @@
+<div class="table-responsive" id="table">
+	<table class="table">
+		<tr><div id="title">Family <%= @family.id %></div></tr>
+		<% @family.users.each do |member| %>
+			<tr>
+				<td><%= member.name %></td>
+				<td>
+				<%= member.presence.capitalize %>
+				</td>
+			<tr>
+		<% end %>
+	</table>		
+</div>

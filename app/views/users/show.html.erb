@@ -1,19 +1,26 @@
 <div class="name">
 	<h1><%= @user.name %></h1>
 </div>
-<div class="family">
-	<h2>Family <%= @family.id %></h2>
-	<% @family.users.each do |member| %>
-		<ul><%= member.name %> - <%= member.presence %><br></ul>
-	<% end %>
-</div>
-<div class="chart">
- <h2>Your family will be meeting here.</h2>
- <h2>Here will be a picture of the dining hall.</h2>
-</div>
-<div class="link">
-<h1>Stay updated!<br>sillisibs.herokuapp.com</h1>
-</div>
-<div class="done">
-	<%= link_to "Done!", checkin_path, class:'button-xlarge pure-button' %>
+<div class="pure-g">
+	<div class="pure-u-2-5">
+		<div class="family">
+			<%= render 'shared/familyview' %>
+		</div>
+	</div>
+	<div class="pure-u-3-5">
+		<div class="chart">
+		 <h2>Your family will be meeting here.</h2>
+		 <h2>Here will be a picture of the dining hall.</h2>
+		</div>
+	</div>
+	<div class="pure-u-3-5">
+		<div class="link">
+		<h1>Stay updated!<br>sillisibs.herokuapp.com</h1>
+		</div>
+	</div>
+	<div class="pure-u-2-5">
+		<div class="done">
+			<%= link_to "Done!", checkin_path, class:'done-button pure-button' %>
+		</div>
+	</div>
 </div>
