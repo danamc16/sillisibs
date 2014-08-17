@@ -1,6 +1,9 @@
 <%= render 'shared/viewport' %>
 <center>
 	<h2>So this will be where the admin dash will be. This way, we can more easily track where everything is happening.</h2>
+	<h2> Current signin = <%= @netid %></h2>
 	<%= link_to "Check In", checkin_path, class:'button-xlarge pure-button' %>
 	<%= link_to "Attendance", families_path, class:'button-xlarge pure-button' %>
+	<br>
+	<%= link_to "Sign Out", signout_path, method: "delete", class:'button-xlarge pure-button' %>
 </center>

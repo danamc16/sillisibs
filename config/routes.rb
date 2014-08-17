@@ -1,6 +1,7 @@
 Sillisibs::Application.routes.draw do
   resources :families
   resources :users
+  resources :sessions, only: [:new,:create,:destroy]
 
   root 'static_pages#home'
 
@@ -8,5 +9,7 @@ Sillisibs::Application.routes.draw do
   match '/admin', to: 'users#admin', via: 'get'
   match '/search', to: 'users#search', via: 'get'
 
+  match '/signout', to: 'sessions#destroy', via: 'delete'
+  
 end
   
