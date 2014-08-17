@@ -73,6 +73,10 @@ h1 span {
 	margin: 0 auto;
 }
 
+.chart {
+	text-align:center;
+}
+
 /* family view */
 
 #table {
@@ -91,4 +95,27 @@ h1 span {
 	font-size:130%;
 	padding:8px;
 	margin:3px;
+}
+
+/* attendance */
+
+.block {
+	display:inline-block;
+	margin:1em;
+}
+
+.container {
+	margin: 0 auto;
+	width:95%;
+}
+
+#attendance {
+	font-size:300%;
+	text-align:center;
+	padding:1em;
+}
+
+.back {
+	float:right;
+	padding:1em;
 }

@@ -1,6 +1,6 @@
 <div class="table-responsive" id="table">
 	<table class="table">
-		<tr><div id="title">Family <%= @family.id %></div></tr>
+		<tr><div id="title"><b>Family <%= @family.id %></b></div></tr>
 		<% @family.users.each do |member| %>
 			<tr>
 				<td><%= member.name %></td>

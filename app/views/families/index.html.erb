@@ -1,1 +1,11 @@
-I am an attendance page!
+<div id="attendance">Attendance</div>
+<div class="container">
+	<% Family.all.each do |family| %>
+		<div class="block">
+		<%= render 'shared/familyview', :@family => family %>
+		</div>
+	<% end %>
+</div>
+<div class="back">
+	<%= link_to "Back", admin_path, class:'done-button pure-button' %>
+</div>

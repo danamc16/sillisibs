@@ -4,10 +4,10 @@ class SessionsController < ApplicationController
 	 def new
 	 	netid
 	 	if netid == 'dmc225'
-	 		flash[:success] = "You have logged in as an admin"
+	 		flash[:success] = "You have logged in as an admin!"
 	 		redirect_to admin_path
 	 	else
-	 		flash[:sucess] = "Successful signin!"
+	 		flash[:success] = "Successful signin!"
 	 		redirect_to search_path
 	 end
 

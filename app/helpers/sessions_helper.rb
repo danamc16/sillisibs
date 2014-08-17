@@ -15,7 +15,7 @@ module SessionsHelper
   # end
 
   def signed_in?
-    !@netid.nil?
+    !session[:cas_user].nil?
   end
 
 #signing out method  
