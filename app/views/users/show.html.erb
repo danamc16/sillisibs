@@ -1,1 +1,19 @@
-I am a show page.
+<div class="name">
+	<h1><%= @user.name %></h1>
+</div>
+<div class="family">
+	<h2>Family <%= @family.id %></h2>
+	<% @family.users.each do |member| %>
+		<ul><%= member.name %> - <%= member.presence %><br></ul>
+	<% end %>
+</div>
+<div class="chart">
+ <h2>Your family will be meeting here.</h2>
+ <h2>Here will be a picture of the dining hall.</h2>
+</div>
+<div class="link">
+<h1>Stay updated!<br>sillisibs.herokuapp.com</h1>
+</div>
+<div class="done">
+	<%= link_to "Done!", checkin_path %>
+</div>

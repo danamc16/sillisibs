@@ -3,6 +3,8 @@ class UsersController < ApplicationController
 	end
 
 	def show
+		@user = User.find_by(:id => params[:id])
+		@family = @user.family
 	end
 
 	def admin
