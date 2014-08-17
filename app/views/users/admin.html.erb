@@ -1,6 +1,6 @@
-So this will be where the admin dash will be. This way, we can more easily track where everything is happening.
-<br>
-Let's see if these links will work!
-<br>
-<%= link_to "Check In", checkin_path %>
-<%= link_to "Attendance", families_path %>
+<%= render 'shared/viewport' %>
+<center>
+	<h2>So this will be where the admin dash will be. This way, we can more easily track where everything is happening.</h2>
+	<%= link_to "Check In", checkin_path, class:'button-xlarge pure-button' %>
+	<%= link_to "Attendance", families_path, class:'button-xlarge pure-button' %>
+</center>

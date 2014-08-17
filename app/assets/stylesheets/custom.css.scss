@@ -1,0 +1,51 @@
+@import "bootstrap";
+
+/* universal */
+
+html {
+  overflow-y: scroll;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+}
+
+.center h1 {
+  margin-bottom: 10px;
+}
+
+/* viewport */
+
+.viewport {
+	height:400px;
+	overflow:hidden;
+}
+.silliman {
+	position:relative;
+	width:100%;
+}
+
+h1 span {
+	position:absolute;
+	text-align:center;
+	color:white;
+	letter-spacing:10px;
+	font-size:300%;
+	top: 315px;
+	width:100%;
+}
+
+/* buttons */
+
+.button-xlarge {
+  font-size: 150% !important;
+  margin:5px;
+}
